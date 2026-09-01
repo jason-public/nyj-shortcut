@@ -1,0 +1,6 @@
+{
+  "name": "업무에 활용하는 단축키",
+  "description": "윈도우, 엑셀, 파워포인트, 워드, 한글(HWP), 크롬 브라우저 필수 단축키 모음 및 인터랙티브 검색·학습 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
