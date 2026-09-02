@@ -657,34 +657,25 @@ export const SHORTCUTS_DATA: ShortcutItem[] = [
     id: 'hwp-07',
     category: 'hangul',
     subCategory: '자간 & 장평 & 글자',
-    keys: ['Alt', 'Shift', 'N / J'],
-    title: '자간 좁게(N) / 넓게(J)',
-    description: '글자 사이의 간격(자간)을 1%씩 좁히거나(Narrow - N) 넓힙니다(J).',
-    tip: '한 줄 끝에서 글자 한두 개가 다음 줄로 애매하게 넘어갔을 때, 블록 잡고 Alt+Shift+N을 2~3번 누르면 딱 한 줄로 들어옵니다!',
+    keys: ['Alt', 'Shift', 'J / K'],
+    title: '장평/자간 좁게(J) / 넓게(K)',
+    description: '글자 사이의 간격(자간 및 장평)을 1%씩 좁히거나(J) 넓힙니다(K).',
+    tip: '한 줄 끝에서 글자 한두 개가 다음 줄로 애매하게 넘어갔을 때, 블록 잡고 Alt+Shift+J를 2~3번 누르면 딱 한 줄로 들어옵니다!',
     isEssential: true,
     defaultHighlight: true,
-    tags: ['자간 조절', '글자 간격', '한 줄 맞춤', '문서 편집'],
-    exampleScenario: '문단 마지막 줄에 단어 하나만 외롭게 떨어졌을 때 자간을 좁혀 깔끔하게 맞출 때'
+    tags: ['자간 조절', '장평 조절', '글자 간격', '한 줄 맞춤', '문서 편집'],
+    exampleScenario: '문단 마지막 줄에 단어 하나만 외롭게 떨어졌을 때 자간/장평을 좁혀 깔끔하게 맞출 때'
   },
   {
     id: 'hwp-08',
     category: 'hangul',
     subCategory: '자간 & 장평 & 글자',
-    keys: ['Alt', 'Shift', 'E / R'],
-    title: '글자 크기 키우기(E) / 줄이기(R)',
-    description: '블록 지정된 텍스트의 크기를 1포인트씩 신속하게 확대(E)하거나 축소(R)합니다.',
+    keys: ['Ctrl', '[ / ]'],
+    title: '글자 크기 키우기([) / 줄이기(])',
+    description: '블록 지정된 텍스트의 크기를 1포인트씩 신속하게 확대([)하거나 축소(])합니다.',
     tip: '글자 크기를 마우스 툴바에서 선택하지 않고 타이핑 리듬을 유지하며 조절할 수 있습니다.',
     isEssential: true,
     tags: ['글자 크기', '폰트 크기', '확대', '축소']
-  },
-  {
-    id: 'hwp-09',
-    category: 'hangul',
-    subCategory: '자간 & 장평 & 글자',
-    keys: ['Alt', 'Shift', 'T / V'],
-    title: '장평 줄이기(T) / 늘리기(V)',
-    description: '글자의 가로 세로 비율(장평)을 조절하여 날씬하게(T) 만들거나 넓게(V) 만듭니다.',
-    tags: ['장평', '글자 비율', '타이포그래피']
   },
   {
     id: 'hwp-10',
@@ -711,13 +702,12 @@ export const SHORTCUTS_DATA: ShortcutItem[] = [
   {
     id: 'hwp-12',
     category: 'hangul',
-    subCategory: '기호 & 특수문자',
-    keys: ['Ctrl', 'F10'],
-    title: '문자표 (특수기호 목록)',
-    description: '한글 전각 기호, 로마 숫자, 단위 기호, 원 문자(①, ㉠) 등을 선택할 수 있는 문자표를 엽니다.',
-    tip: '문자표에서 최근 사용한 기호는 상단에 바로 뜨므로 재사용이 매우 편리합니다.',
-    isEssential: true,
-    tags: ['문자표', '특수문자', '원문자', '기호']
+    subCategory: '개체 & 삽입',
+    keys: ['Ctrl', 'N, I'],
+    title: '그림 넣기 대화상자 (Image)',
+    description: '문서 내에 이미지 및 사진 파일을 불러와 원하는 위치에 삽입합니다.',
+    tip: '그림을 삽입한 후 P(개체 속성)를 눌러 [글자처럼 취급]을 체크하면 레이아웃이 흐트러지지 않습니다.',
+    tags: ['그림 넣기', '이미지 삽입', '사진 추가', '개체 삽입']
   },
   {
     id: 'hwp-13',
@@ -727,6 +717,17 @@ export const SHORTCUTS_DATA: ShortcutItem[] = [
     title: '글자 굵게(B) / 밑줄(U) / 취소선(S)',
     description: '텍스트에 굵은 글씨(Bold), 밑줄(Underline), 취소선(Strike)을 빠르게 지정합니다.',
     tags: ['굵게', '밑줄', '취소선', '글자 스타일']
+  },
+  {
+    id: 'hwp-14',
+    category: 'hangul',
+    subCategory: '기호 & 특수문자',
+    keys: ['Ctrl', 'F10'],
+    title: '문자표 (특수기호 목록)',
+    description: '한글 전각 기호, 로마 숫자, 단위 기호, 원 문자(①, ㉠) 등을 선택할 수 있는 문자표를 엽니다.',
+    tip: '문자표에서 최근 사용한 기호는 상단에 바로 뜨므로 재사용이 매우 편리합니다.',
+    isEssential: true,
+    tags: ['문자표', '특수문자']
   },
 
   // ===================== 6. 크롬 브라우저 (Chrome) =====================
@@ -1088,7 +1089,7 @@ export const SCENARIO_PACKS: ScenarioPack[] = [
         step: 4,
         title: '애매하게 넘친 글자 한 줄 맞춤',
         shortcutId: 'hwp-07',
-        actionDescription: '문단 끝 한두 글자가 다음 줄로 넘어갔을 때 Alt+Shift+N으로 자간을 줄여 딱 한 줄로 정렬'
+        actionDescription: '문단 끝 한두 글자가 다음 줄로 넘어갔을 때 Alt+Shift+J로 자간/장평을 줄여 딱 한 줄로 정렬'
       },
       {
         step: 5,
@@ -1101,7 +1102,7 @@ export const SCENARIO_PACKS: ScenarioPack[] = [
     keyTakeaways: [
       '외부 복사 텍스트의 엉뚱한 폰트와 서식을 원클릭(Ctrl+Spacebar)으로 리셋',
       '한글 Alt+C(모양 복사)로 100페이지 문서도 일관된 제목 스타일 유지',
-      '자간 조절(Alt+Shift+N)로 다음 장으로 삐져나온 단어 한 줄 맞춤 해결'
+      '자간/장평 조절(Alt+Shift+J/K)로 다음 장으로 삐져나온 단어 한 줄 맞춤 해결'
     ]
   },
   {

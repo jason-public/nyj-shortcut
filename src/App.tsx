@@ -18,6 +18,7 @@ import { KeyboardVisualizer } from './components/KeyboardVisualizer';
 import { CheatSheetPrintView } from './components/CheatSheetPrintView';
 import { CompactFloatingWidget } from './components/CompactFloatingWidget';
 import { ScenarioCurations } from './components/ScenarioCurations';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { 
   Sparkles, 
   HelpCircle, 
@@ -550,6 +551,12 @@ export default function App() {
           setIsMiniWidgetOpen(false);
           setCurrentView('catalog');
         }}
+      />
+
+      {/* Floating Scroll To Top Button */}
+      <ScrollToTopButton
+        threshold={250}
+        offsetBottomClass={isMiniWidgetOpen ? 'bottom-20' : 'bottom-6'}
       />
     </div>
   );
